@@ -1,2 +1,23 @@
 ---
 # tasks file for vmware-vm
+
+  - name: get guest facts
+    vmware_guest_facts:
+
+
+  - name: create a VM in esxi
+    vmware_guest:
+      hostname:
+      username:
+      password:
+      validate_certs:
+      folder:
+      name:
+      state:
+      template:
+      disk:
+      hardware:
+      networks:
+      delegate_to:
+
+
