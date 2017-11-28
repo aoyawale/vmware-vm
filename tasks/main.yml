@@ -7,15 +7,15 @@
 
   - name: create a VM in esxi
     vmware_guest:
-      hostname:
-      username:
-      password:
-      validate_certs:
-      folder:
-      name:
-      state:
-      template:
-      disk:
+      hostname: "{{ vmware_vm.vm.hostname }}"
+      username: "{{ vmware_vm.vm.username }}"
+      password: "{{ vmware_vm.vm.password }}"
+      validate_certs: "{{ vmware_vm.vm.validate_certs }}"
+      folder: "{{ vmware_vm.vm.folder }}"
+      name: "{{ vmware_vm.vm.name }}"
+      state: "{{ vmware_vm.vm.state }}"
+      template: "{{ vmware_vm.vm.template }}"
+      disk: 
       hardware:
       networks:
       delegate_to:
